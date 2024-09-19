@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1035865272854",
+    "project_id": "payme-f38bc",
+    "storage_bucket": "payme-f38bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035865272854:android:e525c9c3e5dce307057b37",
+        "android_client_info": {
+          "package_name": "com.example.gpay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPsnlGHjQ_QhU_z9TAO3ES15m_Q-gVixo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035865272854:android:b1b7c0abf077c7ee057b37",
+        "android_client_info": {
+          "package_name": "com.example.payme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPsnlGHjQ_QhU_z9TAO3ES15m_Q-gVixo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
