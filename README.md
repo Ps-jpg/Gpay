@@ -30,5 +30,5 @@ This repository contains a basic GPay clone app developed as part of an assessme
 
 You can download the GPay APK from the following link:
 
-[Download GPay APK](https://github.com/Ps-jpg/Gpay/output/gpay.apk)
+[Download GPay APK]([https://github.com/Ps-jpg/Gpay/output/gpay.apk](https://raw.githubusercontent.com/Ps-jpg/Gpay/main/output/gpay.apk))
 
