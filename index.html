@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPay Clone App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
-            background: #00bfa5;
+            background: #1a73e8;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
         h1, h2, h3 {
-            color: #00bfa5;
+            color: #1a73e8;
         }
         p {
             line-height: 1.6;
@@ -42,7 +44,7 @@
             padding: 1.5rem;
             text-align: center;
             width: 100%;
-            max-width: 300px;
+            max-width: 250px;
         }
         .feature h3 {
             margin-bottom: 1rem;
@@ -54,20 +56,28 @@
             text-align: center;
             margin: 2rem 0;
         }
-        .screenshot img {
-            max-width: 100%;
-            height: auto;
+        .screenshot-slider {
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        .screenshot-slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            margin: 0 auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background: #00bfa5;
+            background: #1a73e8;
             color: white;
             text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
+            padding: 0.3rem 0;
+            position: relative;
             width: 100%;
+        }
+        video {
+            max-width: 80%;
+            height: auto;
         }
     </style>
 </head>
@@ -80,7 +90,7 @@
     <div class="container">
         <section>
             <h2>About the App</h2>
-            <p>This is a basic GPay clone app that I developed as part of an assessment for a company. The app allows users to sign up, log in, transfer money, and view their transaction history.</p>
+            <p>This is a basic GPay clone app. The app allows users to sign up, log in, transfer money, and view their transaction history.</p>
         </section>
 
         <section class="features">
@@ -103,13 +113,45 @@
         </section>
 
         <section class="screenshot">
-            <h2>Screenshot</h2>
-            <img src="screenshot.png" alt="App Screenshot">
+            <h2>Screenshots</h2>
+            <div class="screenshot-slider">
+                <div><img src="output/AddMoney_System.png" alt="Add Money System Screenshot"></div>
+                <div><img src="output/Login1.png" alt="Login Screenshot"></div>
+                <div><img src="output/SignUp.png" alt="Sign Up Screenshot"></div>
+                <div><img src="output/Transaction_Success.png" alt="Transaction Success Screenshot"></div>
+            </div>
+        </section>
+
+        <section class="screenshot">
+            <h2>Demo Video</h2>
+            <video controls>
+                <source src="output/demo of gpay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Parikshit Singh Rajwar. All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          $('.screenshot-slider').slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              cssEase: 'linear',
+              autoplay: true,
+              autoplaySpeed: 3000,
+              arrows: true
+          });
+      });
+    </script>
+
 </body>
 </html>
