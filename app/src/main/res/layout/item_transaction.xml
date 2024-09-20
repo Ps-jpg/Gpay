@@ -1,27 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@android:color/white">
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="8dp"
+    >
 
-    <TextView
-        android:id="@+id/fromTextView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"/>
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/toTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/transactionIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_transaction"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#F9F9F9"
+            />
 
-    <TextView
-        android:id="@+id/amountTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/fromTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="From: [Sender]"
+            android:textSize="16sp"
+            android:textColor="#3498db"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/transactionIcon"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/transactionPartyTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="To: [Recipient]"
+            android:textSize="16sp"
+            android:textColor="#2ecc71"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toBottomOf="@+id/fromTextView"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/fromTextView"
+            app:layout_constraintEnd_toEndOf="@+id/fromTextView" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+ ₹0.00"
+            android:textSize="16sp"
+            android:textColor="#27AE60"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintTop_toBottomOf="@+id/transactionPartyTextView"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/transactionPartyTextView"
+            app:layout_constraintEnd_toEndOf="@+id/transactionPartyTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
