@@ -24,7 +24,10 @@ This repository contains a basic GPay clone app developed as part of an assessme
 ![Transaction Success Screenshot](output/Transaction_Success.png)
 
 ## Demo Video
-[Click here to watch the demo video](output/demo%20of%20gpay.mp4)
+
+
+https://github.com/user-attachments/assets/e5cfea12-0a89-4bf3-b3d2-c8fb9d2d9342
+
 
 ## Download the GPay APK
 
